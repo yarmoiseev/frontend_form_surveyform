@@ -6,49 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Survey Form</title>
   <meta name="description" content="Survey form for customers">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <section>
-    <h1 id="title">Megacorp survey form</h1>
-    <p id="description">We're trying to make the world a better place, please help us</p>
-    <form id="survey-form">
-      <fieldset>
-        <label id="name-label">Enter your name: 
-          <input id="name" type="text" required placeholder="Name Surname">
-          </input>
-        </label>
-        <label id="email-label">Enter your e-mail: 
-          <input id="email" type="email" required placeholder="example@gmail.com">
-          </input>
-        </label>
-        <label id="number-label">Enter your phone number: 
-          <input id="number" type="number" min="7" max="10" placeholder="+995 000 00 00">
-          </input>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label>Are you our customer?
-          <select id="dropdown">
-            <option>Yes</option>
-            <option>No</option>
-            <option>I was</option>
-          </select>
-        </label>
-        <label> Type of your account
-          <input type="radio" name="acc" value="business">Business account</input>
-          <input type="radio" name="acc" value="private">Private account</input>
-          <label> What of out products id your favorite?<input type="checkbox" value="banking">Online banking</input>
-          <input type="checkbox" value="insurance">Medical insurance</input>
-          <input type="checkbox" value="carsharing">Carsharing</input>
-          <input type="checkbox" value="cloud">Cloud storage</input></label>
-        </label>    
-      </fieldset>
-      <fieldset>
-        <label>Tell us all what you want<textarea rows="10" cols="45"></textarea></label>
-      </fieldset>
-      <button id="submit">Submit</button>
-    </form>
-  </section>
+		<div class="container">
+			<section class="content">
+				<h1 id="title" class="tac">Megacorp survey form</h1>
+				<p id="description" class="tac">We're trying to make the world a better place, please help us</p>
+				<form id="survey-form">
+					<fieldset>
+						<label id="name-label" class="db">Name
+							<input id="name" class="db wide" type="text" required placeholder="Enter your name">
+						</label>
+						<label id="email-label" class="db">E-mail
+							<input id="email" class="db wide" type="email" required placeholder="Enter your e-mail">
+						</label>
+						<label id="number-label" class="db">Phone number
+							<input id="number" class="db wide" type="number" min="7" max="10" placeholder="Enter your phone number">
+						</label>
+					</fieldset>
+					<fieldset>
+						<label class="db">Are you our customer?
+							<select id="dropdown" class="db wide">
+								<option>Yes</option>
+								<option>No</option>
+								<option>I was</option>
+							</select>
+						</label>
+						<p class="question">Type of your account</p>
+							<label class="db">
+								<input type="radio" name="acc" value="business"> Business account
+							</label>
+							<label class="db">
+								<input type="radio" name="acc" value="private"> Private account
+							</label>
+						<p class="question">What of out products id your favorite?</p>
+						<label class="db">
+							<input type="checkbox" value="banking"> Online banking</label>
+						<label class="db">
+							<input type="checkbox" value="insurance"> Medical insurance</label>
+						<label class="db">
+							<input type="checkbox" value="carsharing"> Carsharing</label>
+						<label class="db">
+							<input type="checkbox" value="cloud"> Cloud storage</label>									
+					</fieldset>
+					<fieldset>
+						<label class="db">Tell us all what you want
+							<textarea class="db wide" rows="10" cols="45"></textarea>
+						</label>
+					</fieldset>
+					<button id="submit" class="db wide">Submit</button>
+				</form>
+			</section>
+		</div>
 </body>
 </html>

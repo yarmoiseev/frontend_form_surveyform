@@ -1,0 +1,89 @@
+/* reset */
+* {
+	margin: 0 0 0 0;
+	border-width: 0;
+}
+/* ========== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+body {
+	height: 100%;
+	width: 100%;
+	color: aliceblue;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient( 230deg, rgba(52 148 185 / 80%), rgba(136 188 206 / 70%) ), url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* ===========CONTAINER=========== */
+.container {
+	max-width: 800px;
+	margin: 3.5rem auto 0 auto;
+}
+@media (max-width: 1100px) {
+	.container {
+		max-width: 600px;
+	}
+}
+@media (max-width: 800px) {
+	.container {
+		max-width: 500px;
+	}
+}
+@media (max-width: 620px) {
+	.container {
+		max-width: 300px;
+	}
+}
+/* ===========TITLE&DESCRIPTION=========== */
+.tac {
+	text-align: center;
+}
+h1, p {
+	margin-top: 0;
+}
+h1 {
+	font-weight: 400;
+	line-height: 1.2;
+	font-size: 2.5rem;
+}
+#description {
+	font-style: italic;
+	font-weight: 200;
+	font-size: 1.3rem;
+	text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+	margin-bottom: 0.5rem;
+}
+/* ===========FORM=========== */
+#survey-form {
+	background-color: rgb(17 78 102 / 80%);
+	border-radius: 5px;
+	margin: 20px 0 0 0;
+	padding: 2rem;
+}
+.db {
+	display: block;
+}
+input, select {
+	margin: 10px 0 15px 0;
+}
+label, .question {
+	font-size: 1.2rem;
+}
+.wide {
+	width: 100%;
+  height: 2rem;
+}
+/* TODO: еще формы инпута | что-то из дыр*/
