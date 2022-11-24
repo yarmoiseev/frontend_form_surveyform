@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <meta name="description" content="Survey form for customers">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <h1 id="title">Megacorp survey form</h1>
+    <p id="description">We're trying to make the world a better place, please help us</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: 
+          <input id="name" type="text" required placeholder="Name Surname">
+          </input>
+        </label>
+        <label id="email-label">Enter your e-mail: 
+          <input id="email" type="email" required placeholder="example@gmail.com">
+          </input>
+        </label>
+        <label id="number-label">Enter your phone number: 
+          <input id="number" type="number" min="7" max="10" placeholder="+995 000 00 00">
+          </input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Are you our customer?
+          <select id="dropdown">
+            <option>Yes</option>
+            <option>No</option>
+            <option>I was</option>
+          </select>
+        </label>
+        <label> Type of your account
+          <input type="radio" name="acc" value="business">Business account</input>
+          <input type="radio" name="acc" value="private">Private account</input>
+          <label> What of out products id your favorite?<input type="checkbox" value="banking">Online banking</input>
+          <input type="checkbox" value="insurance">Medical insurance</input>
+          <input type="checkbox" value="carsharing">Carsharing</input>
+          <input type="checkbox" value="cloud">Cloud storage</input></label>
+        </label>    
+      </fieldset>
+      <fieldset>
+        <label>Tell us all what you want<textarea rows="10" cols="45"></textarea></label>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
