@@ -16,46 +16,50 @@
 				<form id="survey-form">
 					<fieldset>
 						<label id="name-label" class="db">Name
-							<input id="name" class="db wide" type="text" required placeholder="Enter your name">
+							<input id="name" class="db wide text" type="text" required placeholder="Enter your name" maxlength="30">
 						</label>
 						<label id="email-label" class="db">E-mail
-							<input id="email" class="db wide" type="email" required placeholder="Enter your e-mail">
+							<input id="email" class="db wide text" type="email" required placeholder="Enter your e-mail" maxlength="30">
 						</label>
 						<label id="number-label" class="db">Phone number
-							<input id="number" class="db wide" type="number" min="7" max="10" placeholder="Enter your phone number">
+							<input id="number" class="db wide text" type="tel" min="7" max="10" placeholder="Enter your phone number" maxlength="10">
 						</label>
 					</fieldset>
 					<fieldset>
 						<label class="db">Are you our customer?
-							<select id="dropdown" class="db wide">
+							<select id="dropdown" class="db wide text">
 								<option>Yes</option>
 								<option>No</option>
 								<option>I was</option>
 							</select>
 						</label>
-						<p class="question">Type of your account</p>
+						<div class="questionblock">
+							<p class="question">Type of your account</p>
+								<label class="db">
+									<input type="radio" name="acc" value="business"> Business account
+								</label>
+								<label class="db">
+									<input type="radio" name="acc" value="private"> Private account
+								</label>
+						</div>
+						<div class="questionblock">
+							<p class="question question_p">What of out products id your favorite?</p>
 							<label class="db">
-								<input type="radio" name="acc" value="business"> Business account
-							</label>
+								<input type="checkbox" value="banking"> Online banking</label>
 							<label class="db">
-								<input type="radio" name="acc" value="private"> Private account
-							</label>
-						<p class="question">What of out products id your favorite?</p>
-						<label class="db">
-							<input type="checkbox" value="banking"> Online banking</label>
-						<label class="db">
-							<input type="checkbox" value="insurance"> Medical insurance</label>
-						<label class="db">
-							<input type="checkbox" value="carsharing"> Carsharing</label>
-						<label class="db">
-							<input type="checkbox" value="cloud"> Cloud storage</label>									
+								<input type="checkbox" value="insurance"> Medical insurance</label>
+							<label class="db">
+								<input type="checkbox" value="carsharing"> Carsharing</label>
+							<label class="db">
+								<input type="checkbox" value="cloud"> Cloud storage</label>
+						</div>									
 					</fieldset>
-					<fieldset>
-						<label class="db">Tell us all what you want
-							<textarea class="db wide" rows="10" cols="45"></textarea>
+					<fieldset class="questionblock">
+						<label class="db">You can tell us anything you want
+							<textarea class="db wide text" rows="10" cols="45"></textarea>
 						</label>
 					</fieldset>
-					<button id="submit" class="db wide">Submit</button>
+					<button id="submit" class="db wide questionblock subbutton">Submit</button>
 				</form>
 			</section>
 		</div>
