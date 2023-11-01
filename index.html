@@ -1,70 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Survey Form</title>
-  <meta name="description" content="Survey form for customers">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-		<div class="container">
-			<section class="content">
-				<h1 id="title" class="tac">Megacorp survey form</h1>
-				<p id="description" class="tac">We're trying to make the world a better place, please help us</p>
-				<form id="survey-form">
-					<fieldset>
-						<label id="name-label" class="db">Name
-							<input id="name" class="db wide text" type="text" required placeholder="Enter your name" maxlength="30">
-						</label>
-						<label id="number-label" class="db">Age
-							<input id="number" class="db wide text" type="number" min="1" max="150" placeholder="How old are you?" maxlength="3">
-						</label>
-						<label id="email-label" class="db">E-mail
-							<input id="email" class="db wide text" type="email" required placeholder="Enter your e-mail" maxlength="30">
-						</label>
-						<label id="phonenumber-label" class="db">Phone number
-							<input id="phonenumber" class="db wide text" type="tel" placeholder="Enter your phone number" maxlength="10">
-						</label>
-					</fieldset>
-					<fieldset>
-						<label class="db">Are you our customer?
-							<select id="dropdown" class="db wide text">
-								<option>Yes</option>
-								<option>No</option>
-								<option>I was</option>
-							</select>
-						</label>
-						<div class="questionblock">
-							<p class="question">Type of your account</p>
-								<label class="db">
-									<input type="radio" name="acc" value="business"> Business account
-								</label>
-								<label class="db">
-									<input type="radio" name="acc" value="private"> Private account
-								</label>
-						</div>
-						<div class="questionblock">
-							<p class="question question_p">Your favorite Megacorp product</p>
-							<label class="db">
-								<input type="checkbox" value="banking"> Online banking</label>
-							<label class="db">
-								<input type="checkbox" value="insurance"> Medical insurance</label>
-							<label class="db">
-								<input type="checkbox" value="carsharing"> Carsharing</label>
-							<label class="db">
-								<input type="checkbox" value="cloud"> Cloud storage</label>
-						</div>									
-					</fieldset>
-					<fieldset class="questionblock">
-						<label class="db">You can tell us anything you want
-							<textarea class="db wide text" rows="10" cols="45"></textarea>
-						</label>
-					</fieldset>
-					<button id="submit" class="db wide questionblock subbutton">Submit</button>
-				</form>
-			</section>
-		</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <meta name="description" content="Survey form for customers" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="content">
+      <div class="container">
+        <h1 id="title" class="tac">Megacorp survey form</h1>
+        <p id="description" class="tac">
+          We're trying to make the world a better place, please help us
+        </p>
+        <form id="survey-form">
+          <fieldset>
+            <label id="name-label" class="db"
+              >Name
+              <input
+                id="name"
+                class="db wide text"
+                type="text"
+                required
+                placeholder="Enter your name"
+              />
+            </label>
+            <label id="number-label" class="db"
+              >Age
+              <input
+                id="number"
+                class="db wide text"
+                type="number"
+                min="1"
+                max="150"
+                placeholder="How old are you?"
+              />
+            </label>
+            <label id="email-label" class="db"
+              >E-mail
+              <input
+                id="email"
+                class="db wide text"
+                type="email"
+                required
+                placeholder="Enter your e-mail"
+                maxlength="30"
+              />
+            </label>
+            <label id="phonenumber-label" class="db"
+              >Phone number
+              <input
+                id="phonenumber"
+                class="db wide text"
+                type="tel"
+                placeholder="Enter your phone number"
+                maxlength="10"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label class="db"
+              >Are you our customer?
+              <select id="dropdown" class="db wide text">
+                <option>Yes</option>
+                <option>No</option>
+                <option>I was</option>
+              </select>
+            </label>
+            <div class="questionblock">
+              <p class="question">Type of your account</p>
+              <label class="db">
+                <input type="radio" name="acc" value="business" /> Business
+                account
+              </label>
+              <label class="db">
+                <input type="radio" name="acc" value="private" /> Private
+                account
+              </label>
+            </div>
+            <div class="questionblock">
+              <p class="question question_p">Your favorite Megacorp product</p>
+              <label class="db">
+                <input type="checkbox" value="banking" /> Online banking</label
+              >
+              <label class="db">
+                <input type="checkbox" value="insurance" /> Medical
+                insurance</label
+              >
+              <label class="db">
+                <input type="checkbox" value="carsharing" /> Carsharing</label
+              >
+              <label class="db">
+                <input type="checkbox" value="cloud" /> Cloud storage</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="questionblock">
+            <label class="db"
+              >You can tell us anything you want
+              <textarea class="db wide text" rows="10" cols="45"></textarea>
+            </label>
+          </fieldset>
+          <button id="submit" class="db wide questionblock subbutton">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
